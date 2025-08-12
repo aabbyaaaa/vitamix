@@ -6,12 +6,33 @@
 
     
     <!-- 组件样式 -->
-    <link rel="stylesheet" href="omron_snippet_component/styles/omron_snippet.css">
-    <link rel="stylesheet" href="omron_snippet_component/styles/responsive.css">
-        <link rel="stylesheet" href="header/header.css">
-<script src="header/header.js"></script>
+    <link rel="stylesheet" href="snippet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="snippet.js"></script>
+    
 </head>
-    <title>Vitamix E320 FAQ - 常見問題</title>
+   <!-- 頁面標題 -->
+<title>Vitamix E320 限時優惠｜獨家特談組只要 $17,500｜立即私訊搶購</title>
+
+<!-- 搜尋引擎優化 (SEO) -->
+<meta name="description" content="限時獨家特談組｜Vitamix E320 全食物調理機限時優惠中，只要 $17,500 現省 $7,200，再送 5 大好禮！數量有限，錯過只能買貴。立即私訊 LINE 下單！">
+<meta name="keywords" content="Vitamix, E320, 全食物調理機, 食品調理機, 高速果汁機, 食譜機, 特談優惠, 限時優惠, 養生調理機, 陳月卿推薦, 私訊下單">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph 標籤（社群分享）-->
+<meta property="og:title" content="Vitamix E320 獨家特談組｜限時優惠只要 $17,500">
+<meta property="og:description" content="錯過就貴 $7,200！立即入手 Vitamix E320 調理機，享限時特價 + 五大贈禮，只在 LINE 好友限定！">
+<meta property="og:image" content="https://yourdomain.com/images/vitamix-e320-og.jpg"> <!-- 要改 -->
+<meta property="og:url" content="https://dgs.com.tw/Hotcategory-vitamix"><!-- 要改 -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="德記儀器">
+
+   <!-- Favicon -->
+    <link rel="icon" href="https://cdn.shopify.com/s/files/1/0204/3327/2854/files/favicon-16x16.ico?v=1754555256">
+    
+    <!-- 標準網址 (防止重複內容) -->
+    <link rel="canonical" href="https://dgs.com.tw/Hotcategory-vitamix"><!-- 要改 -->
+    
     <style>
       /* 基礎設定 */
       * {
@@ -560,7 +581,7 @@
     padding: 20px 10px;
     border-radius: 50px;
     text-align: center;
-    width: 90%;
+    width: 99%;
     
   }
 
@@ -585,6 +606,290 @@
   }
 }
 
+/* header css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Noto+Sans+TC:wght@400;700;900&display=swap");
+
+.header {
+  background: linear-gradient(135deg, #c1032f 0%, #a8022a 100%);
+  color: white;
+  padding: 15px 0;
+ box-shadow: 0 -6px 10px 5px rgba(8, 0, 2, 0.904); /* 改這行 */
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+}
+
+.container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  align-items: center;
+  gap: 30px;
+}
+
+/* LOGO 區域 */
+
+.logo-img2 {
+  width: 100%;
+}
+
+/* 
+.logo-img {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(45deg, #ffd700, #ffed4a);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #c1032f;
+  font-weight: 900;
+}
+ */
+/* 倒數計時區域 */
+.countdown-section {
+  text-align: center;
+}
+
+.countdown-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffd700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.time-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 8px;
+  padding: 8px 12px;
+  min-width: 60px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.time-number {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+  color: white;
+}
+
+.time-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.time-separator {
+  font-size: 24px;
+  font-weight: 900;
+  color: #ffd700;
+  display: flex;
+  align-items: center;
+  animation: blink 1s infinite;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* CTA 按鈕區域 */
+.cta-section {
+  text-align: right;
+}
+
+.cta-button {
+  background: linear-gradient(45deg, #ffd700, #ffed4a);
+  color: #c1032f;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  text-shadow: none;
+  white-space: nowrap; /* 防止文字換行 */
+}
+
+.cta-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.cta-button:hover::before {
+  left: 100%;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
+  background: linear-gradient(45deg, #ffed4a, #fff700);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+}
+
+/* 動畫 */
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes urgent-pulse {
+  0%,
+  100% {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1);
+    border-color: rgba(255, 215, 0, 0.3);
+  }
+  50% {
+    background: rgba(255, 215, 0, 0.3);
+    transform: scale(1.05);
+    border-color: rgba(255, 215, 0, 0.6);
+  }
+}
+
+/* 緊急狀態樣式 */
+.urgent .time-box {
+  animation: urgent-pulse 1s infinite;
+}
+
+.urgent .time-number {
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+.urgent .countdown-title {
+  color: #ffd700;
+  animation: blink 0.5s infinite;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .header-content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    text-align: center;
+  }
+
+.logo-img2 {
+  width: 30%;
+}
+  .countdown-timer {
+    gap: 10px;
+  }
+
+  .time-box {
+    min-width: 50px;
+    padding: 6px 8px;
+  }
+
+  .time-number {
+    font-size: 20px;
+  }
+
+  .cta-section {
+    text-align: center;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* 手機版隱藏 CTA */
+@media (max-width: 768px) {
+    .cta-section {
+        display: none !important;
+    }
+}
+
+/* 平板也隱藏 */
+@media (max-width: 1024px) {
+    .cta-section {
+        display: none !important;
+    }
+}
+
+.header {
+  background: linear-gradient(135deg, #c1032f 0%, #a8022a 100%);
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 4px 20px rgba(193, 3, 47, 0.3);
+  position: fixed; /* 改為 fixed */
+  top: 0;
+  width: 100%; /* 加入寬度 */
+  z-index: 100;
+  transition: transform 0.3s ease-in-out; /* 加入動畫效果 */
+}
+
+/* 隱藏狀態 */
+.header.hidden {
+  transform: translateY(-100%);
+}
+
+/* 顯示狀態 */
+.header.visible {
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </style>
   </head>
@@ -597,14 +902,14 @@
         <div class="container1">
             <div class="header-content">
                 <!-- LOGO -->
-                 <div class="logoimg">
-                  <a href="#" class="logo">
-                    <img src="logo.png" alt="Brand Logo" class="logo-img">
+                 <div class="logoimg2">
+                  <a href="https://dgs.com.tw/" class="logo2">
+                    <img src="https://cdn.shopify.com/s/files/1/0204/3327/2854/files/20211216-_-CIS__FA__LOGO-32.png?v=1754555142" alt="Brand Logo" class="logo-img2">
                   </a>
                   </div>    
                 <!-- 倒數計時條 -->
                 <div class="countdown-section">
-                    <div class="countdown-title" id="countdownTitle">🎯 Vitamix 獨家特談組 限時開搶</div>
+                    <div class="countdown-title" id="countdownTitle">⏰ Vitamix 獨家特談組 限時開搶</div>
                     <div class="countdown-timer" id="countdownTimer">
                         <div class="time-box">
                             <div class="time-number" id="days">00</div>
@@ -630,7 +935,7 @@
                 
                 <!-- CTA 按鈕 -->
                <div class="cta-section">
-    <a href="#" class="cta-button" id="ctaButton" onclick="handleCTA()">
+    <a href="https://lin.ee/qjKkKwB" target="_blank" class="cta-button" id="ctaButton">
         私訊LINE 現省$7,200
           <span class="finger-icon">👉</span>
     </a>
@@ -639,7 +944,57 @@
         </div>
     </header>
 
+    <div class="banner">
+        <img src="https://cdn.shopify.com/s/files/1/0204/3327/2854/files/2926x1167.jpg?v=1754919439" alt="主視覺橫幅">
+    </div>
 
+<style>
+.banner {
+            width: 100%;
+            text-align: center;
+            /* 電腦版上方留空 */
+            margin-top: 80px;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* 電腦版設置 (768px 以上) */
+        @media (min-width: 768px) {
+            .banner {
+                margin-top: 80px; /* 電腦版上方留空80px */
+            }
+            
+            .banner img {
+                max-width: 1200px; /* 最大寬度1200px */
+                width: 100vw; /* 不超過螢幕寬度的90% */
+            }
+        }
+
+        /* 手機版設置 (767px 以下) */
+        @media (max-width: 767px) {
+            .banner {
+                margin-top: 180px; /* 手機版上方留空40px */
+            }
+            
+            .banner img {
+                width: 100%; /* 手機版100%寬 */
+                max-width: none;
+            }
+        }
+
+        /* 更大螢幕的優化 (1200px 以上) */
+        @media (min-width: 1200px) {
+            .banner img {
+                max-width: 1300px; /* 維持最大1200px */
+                width: min(1300px, 100vw); /* 取1200px或90vw中的較小值 */
+            }
+        }
+</style>
     <div class="container">
       <div class="content-area">
         <div class="vc_row wpb_row vc_row-fluid vc_custom_1518063796382">
@@ -663,7 +1018,64 @@
             </div>
         </div>
 
+<div style="box-sizing:border-box; max-width:680px; width:100%; margin:0px auto; padding:20px 5px; background:#fff; border:none; border-radius:14px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', Arial, sans-serif; color:#222; line-height:1.7; margin-top: 10px; padding-top: 0px;">
+  <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+    <span style="display:inline-block; width:8px; height:8px; border-radius:50%;"></span>
+    <strong style="font-size:16px; letter-spacing:.3px;">📌 請注意</strong>
+  </div>
 
+  <p style="margin:8px 0 0;">
+    本優惠為 <strong>LINE 好友限定</strong>，官網不會上架，也不會對外公開。
+  </p>
+  <p style="margin:8px 0 0;">
+    本次「<strong>1 機 + 1 杯</strong>」的特談組合，有別於市售高單價的 1 機 2 杯版本，是德記額外爭取的專屬優惠。
+  </p>
+  <p style="margin:8px 0 0;">
+    此優惠為 <strong>內部限定方案</strong>，請勿外傳，以免影響後續與原廠的合作安排。
+  </p>
+  <p style="margin:8px 0 16px;">
+    如需購買，請直接透過 
+    <a href="https://lin.ee/qjKkKwB" target="_blank" style="color:#26b7bc; text-decoration:none; font-weight:700;">
+      <strong>LINE 私訊</strong>
+    </a>
+    下單，我們將儘快為您安排出貨。
+  </p>
+</div>
+
+
+
+
+
+
+
+
+           <div class="wpb_wrapper">
+                    <h3 style="text-align: left;padding:0px 20px;font-size: 20px;font-weight: 600;">
+
+
+                    </h3>
+                  </div>
+                </div>
+
+
+                <div class="wpb_single_image wpb_content_element vc_align_left">
+                  <figure class="wpb_wrapper vc_figure">
+                    <div class="vc_single_image-wrapper vc_box_border_grey">
+                      <img
+            
+                        src="https://cdn.shopify.com/s/files/1/0204/3327/2854/files/LINE_DGS-1040x2080-_-01_1070a9b3-8d99-423f-913b-dd28e93f4ead.jpg?v=1754919822"
+                        class="vc_single_image-img attachment-full"
+                        alt="Vitamix-E320-守護健康一輩子的好夥伴"
+                        loading="lazy"
+                      />
+                    </div>
+                  </figure>
+                </div>
+
+
+
+
+<div>
 <!-- CTA 按鈕 -->
 <a href="https://lin.ee/qjKkKwB" class="cta-button1" target="_blank">
   <div class="cta-text">
@@ -674,13 +1086,27 @@
   </div>
   <div class="cta-icon">👉</div>
 </a>
-<hr> 
-           <div class="wpb_wrapper">
-                    <h3 style="text-align: left;padding:0px 20px;font-size: 20px;font-weight: 600;">
 
+</div>
+<br>
+<br>
 
-                    </h3>
-                  </div>
+                <div class="wpb_single_image wpb_content_element vc_align_left">
+                  <figure class="wpb_wrapper vc_figure">
+                    <div class="vc_single_image-wrapper vc_box_border_grey">
+                      <img
+            
+                        src="https://cdn.shopify.com/s/files/1/0204/3327/2854/files/LINE_DGS-1040x2080-_-01_e99a1024-b954-4159-a29d-9bb6565750c8.jpg?v=1754920325"
+                        class="vc_single_image-img attachment-full"
+                        alt="為什麼大家都愛用E320"
+                        loading="lazy"
+                      />
+                    </div>
+                  </figure>
+                </div>
+                </div>
+                </div>
+                </div>
                 </div>
     
                 <div class="wpb_text_column wpb_content_element">
@@ -700,7 +1126,7 @@
                       <img
                         width="1280"
                         height="868"
-                        src="https://d28b6qkjcc8g2v.cloudfront.net/wp-content/uploads/2019/10/20200421-Vitamix-E320-產品介紹網路圖素-2-1.jpg"
+                        src="https://cdn.shopify.com/s/files/1/0204/3327/2854/files/V1.jpg?v=1754554628"
                         class="vc_single_image-img attachment-full"
                         alt="Vitamix-E320-守護健康一輩子的好夥伴"
                         loading="lazy"
@@ -718,7 +1144,7 @@
                       <img
                         width="1280"
                         height="3393"
-                        src="https://d28b6qkjcc8g2v.cloudfront.net/wp-content/uploads/2019/10/20200421-Vitamix-E320-產品介紹網路圖素-2-3.jpg"
+                        src="https://cdn.shopify.com/s/files/1/0204/3327/2854/files/V2.jpg?v=1754554628"
                         class="vc_single_image-img attachment-full"
                         alt="Vitamix-E320調理機-產品特色與經典再現"
                         loading="lazy"
@@ -733,7 +1159,7 @@
                       <img
                         width="1280"
                         height="1446"
-                        src="https://d28b6qkjcc8g2v.cloudfront.net/wp-content/uploads/2024/10/cxv51ej9_01.jpg"
+                        src="https://cdn.shopify.com/s/files/1/0204/3327/2854/files/V3.jpg?v=1754554628"
                         class="vc_single_image-img attachment-full"
                         alt="Vitamix-E320調理機-堅固耐用與萬用調理"
                         loading="lazy"
@@ -760,7 +1186,7 @@
                       <img
                         width="1280"
                         height="1335"
-                        src="https://d28b6qkjcc8g2v.cloudfront.net/wp-content/uploads/2024/10/cxv51ej9_02.png"
+                        src="https://cdn.shopify.com/s/files/1/0204/3327/2854/files/V4.png?v=1754554628"
                         class="vc_single_image-img attachment-full"
                         alt="Vitamix-E320調理機-堅固耐用與萬用調理"
                         loading="lazy"
@@ -777,7 +1203,7 @@
                       <img
                         width="1280"
                         height="1713"
-                        src="https://d28b6qkjcc8g2v.cloudfront.net/wp-content/uploads/2024/10/q3ztm5ka_01.jpg"
+                        src="https://cdn.shopify.com/s/files/1/0204/3327/2854/files/V5.jpg?v=1754554628"
                         class="vc_single_image-img attachment-full"
                         alt="Vitamix-E320調理機-堅固耐用與萬用調理"
                         loading="lazy"
@@ -792,7 +1218,7 @@
                       <img
                         width="1280"
                         height="1031"
-                        src="https://d28b6qkjcc8g2v.cloudfront.net/wp-content/uploads/2024/10/q3ztm5ka_02.jpg"
+                        src="https://cdn.shopify.com/s/files/1/0204/3327/2854/files/V6.jpg?v=1754554628"
                         class="vc_single_image-img attachment-full"
                         alt="Vitamix-E320調理機-堅固耐用與萬用調理"
                         loading="lazy"
@@ -820,7 +1246,7 @@
                       <img
                         width="1280"
                         height="1473"
-                        src="https://d28b6qkjcc8g2v.cloudfront.net/wp-content/uploads/2024/10/q3ztm5ka_03.jpg"
+                        src="https://cdn.shopify.com/s/files/1/0204/3327/2854/files/V7.jpg?v=1754554628"
                         class="vc_single_image-img attachment-full"
                         alt="Vitamix-E320調理機-堅固耐用與萬用調理"
                         loading="lazy"
@@ -835,7 +1261,7 @@
                       <img
                         width="1280"
                         height="2334"
-                        src="https://d28b6qkjcc8g2v.cloudfront.net/wp-content/uploads/2024/10/v4n1cqgf.png"
+                        src="https://cdn.shopify.com/s/files/1/0204/3327/2854/files/V8.png?v=1754554628"
                         class="vc_single_image-img attachment-full"
                         alt="Vitamix-大侑-調理機-E系列-超跑級-達人推薦-食譜分享-食譜-分享會"
                         loading="lazy"
@@ -853,7 +1279,7 @@
                       <img
                         width="1920"
                         height="1080"
-                        src="https://d28b6qkjcc8g2v.cloudfront.net/wp-content/uploads/2019/10/191020-Vitamix-E320-微開箱-OK.mp4_000001926.jpg"
+                        src="https://cdn.shopify.com/s/files/1/0204/3327/2854/files/V9.jpg?v=1754554910"
                         class="attachment-full"
                         alt="Vitamix-E320調理機-微開箱"
                         loading="lazy"
@@ -884,7 +1310,7 @@
                       <img
                         width="1920"
                         height="1080"
-                        src="https://d28b6qkjcc8g2v.cloudfront.net/wp-content/uploads/2019/10/191020-Vitamix-E320-料理示範-豆穀漿-麵糰-OK.mp4_000001034.jpg"
+                        src="https://cdn.shopify.com/s/files/1/0204/3327/2854/files/V10.jpg?v=1754554910"
                         class="attachment-full"
                         alt="Vitamix-E320調理機-料理示範"
                         loading="lazy"
@@ -924,7 +1350,7 @@
   <div class="cta-text">
     <span class="cta-title">🔥 最後機會｜僅此一檔</span>
     <span class="cta-subtitle">
-      挑戰全網最低，錯過就多花 <span class="cta-price">$7,200</span>
+      挑戰全網最低，錯過多花 <span class="cta-price">$7,200</span>
     </span>
   </div>
   <div class="cta-icon">👉</div>
@@ -1125,6 +1551,214 @@
         console.log("Vitamix FAQ 頁面初始化完成");
       });
  </script>
+
+
+
+
+ <script>
+
+  // ====================================
+// header
+// ====================================
+// ====================================
+// 時間設定區域 - 請在這裡修改你的截止時間
+// ====================================
+const deadline = new Date("2025-08-19T23:59:00").getTime();
+
+// 其他可選設定
+const brandName = "德記";
+const countdownTitle = "⏰ Vitamix 獨家特談組 限時開搶";
+const ctaButtonText = "";
+
+// ====================================
+// 倒數計時功能
+// ====================================
+function updateCountdown() {
+  const now = new Date().getTime();
+  const distance = deadline - now;
+
+  if (distance > 0) {
+    // 計算剩餘時間
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // 更新顯示
+    document.getElementById("days").textContent = String(days).padStart(2, "0");
+    document.getElementById("hours").textContent = String(hours).padStart(
+      2,
+      "0"
+    );
+    document.getElementById("minutes").textContent = String(minutes).padStart(
+      2,
+      "0"
+    );
+    document.getElementById("seconds").textContent = String(seconds).padStart(
+      2,
+      "0"
+    );
+
+    // 緊急狀態：少於24小時
+    const countdownSection = document.querySelector(".countdown-section");
+    if (days === 0 && hours < 24) {
+      countdownSection.classList.add("urgent");
+    } else {
+      countdownSection.classList.remove("urgent");
+    }
+  } else {
+    // 時間結束
+    handleTimeExpired();
+  }
+}
+
+// ====================================
+// 時間結束處理
+// ====================================
+function handleTimeExpired() {
+  document.getElementById("days").textContent = "00";
+  document.getElementById("hours").textContent = "00";
+  document.getElementById("minutes").textContent = "00";
+  document.getElementById("seconds").textContent = "00";
+  document.getElementById("countdownTitle").textContent = "🎉 Offer Ended";
+
+  const ctaButton = document.getElementById("ctaButton");
+  ctaButton.textContent = "Sold Out";
+  ctaButton.style.background = "#95a5a6";
+  ctaButton.style.cursor = "not-allowed";
+  ctaButton.onclick = null;
+}
+
+// ====================================
+// CTA 按鈕點擊處理
+// ====================================
+function handleCTA() {
+  const now = new Date().getTime();
+  if (deadline > now) {
+    alert(
+      "🛒 Redirecting to checkout...\n\n✨ Special offer is still active!\n⏰ Don't miss out!"
+    );
+
+    // 這裡可以加入實際的跳轉邏輯
+    // window.location.href = 'https://your-checkout-page.com';
+  } else {
+    alert(
+      "😔 Sorry, this offer has ended.\n\nStay tuned for our next amazing deal!"
+    );
+  }
+}
+
+// ====================================
+// 初始化設定
+// ====================================
+function initializeHeader() {
+  // 設定品牌名稱
+  if (brandName && document.getElementById("brandName")) {
+    document.getElementById("brandName").textContent = brandName;
+  }
+
+  // 設定倒數標題
+  if (countdownTitle && document.getElementById("countdownTitle")) {
+    document.getElementById("countdownTitle").textContent = countdownTitle;
+  }
+
+  // 設定 CTA 按鈕文字
+  if (ctaButtonText && document.getElementById("ctaButton")) {
+    document.getElementById("ctaButton").textContent = ctaButtonText;
+  }
+
+  // 開始倒數計時
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+}
+
+// ====================================
+// 頁面載入完成後執行
+// ====================================
+document.addEventListener("DOMContentLoaded", function () {
+  initializeHeader();
+
+  // 檢查設定的時間是否有效
+  if (deadline <= new Date().getTime()) {
+    console.warn("警告：設定的截止時間已經過期！請更新 deadline 變數。");
+  }
+});
+
+// ====================================
+// 額外功能：取得剩餘時間（可選）
+// ====================================
+function getRemainingTime() {
+  const now = new Date().getTime();
+  const distance = deadline - now;
+
+  if (distance > 0) {
+    return {
+      days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+      minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+      seconds: Math.floor((distance % (1000 * 60)) / 1000),
+      total: distance,
+    };
+  }
+  return null;
+}
+
+// 滾動隱藏/顯示 Header（只在手機版生效）
+let lastScrollTop = 0;
+
+function handleHeaderScroll() {
+  // 只在手機版執行
+  if (window.innerWidth <= 768) {
+    const header = document.querySelector(".header");
+    const currentScrollTop =
+      window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScrollTop > lastScrollTop && currentScrollTop > 100) {
+      // 往下滑且滑動超過 100px，隱藏 header
+      header.classList.add("hidden");
+      header.classList.remove("visible");
+    } else if (currentScrollTop < lastScrollTop) {
+      // 往上滑，顯示 header
+      header.classList.add("visible");
+      header.classList.remove("hidden");
+    }
+
+    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+  }
+}
+
+// 監聽滾動事件
+window.addEventListener("scroll", handleHeaderScroll);
+
+// 監聽窗口大小變化
+window.addEventListener("resize", function () {
+  const header = document.querySelector(".header");
+  if (window.innerWidth > 768) {
+    // 桌機版時移除所有 class，確保 header 正常顯示
+    header.classList.remove("hidden", "visible");
+  }
+});
+</script>
+
+ <script> 
+
+var header = $('.header');
+
+$(window).scroll(function(e){
+    if(header.offset().top !== 0){
+        if(!header.hasClass('shadow')){
+            header.addClass('shadow');
+        }
+    }else{
+        header.removeClass('shadow');
+    }
+});
+
+</script>
+
+
 
   </body>
 </html>
